@@ -1,0 +1,105 @@
+:root {
+/* --font1: acme; */
+--font2: Black Ops One;
+/* --font3: DM Serif Display; */
+/* --font4: Great Vibes; */
+--font5: Neuton;
+/* --font6: Old Standard TT; */
+/* --font7: Prata; */
+/* --font8: Sacramento; */
+
+--font1: 'Acme', sans-serif;
+--font3: 'DM Serif Display', serif;
+--font4: 'Great Vibes', cursive;
+--font6: 'Old Standard TT', serif;
+--font7: 'Prata', serif;
+--font8: 'Sacramento', cursive;
+
+}
+
+#landing {
+    border: 1px solid black;
+    height: max-content;
+}
+
+.main-nav-item {
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+    width: 50px;
+    height: 150px;
+    background-color: #f7f7ff;
+    border: 1px solid rebeccapurple;
+}
+
+.about-link, .projects-link, .contact-link {
+    position: relative;
+    /* height: auto; */
+    top: 100px;
+    padding: 5px;
+    border: 2px solid gold;
+}
+
+.main-nav-ul {
+    position: relative;
+    width:100%;
+    height: 150px;
+    border: 1px solid green;
+}
+
+.empty {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: #070600;
+    border: 1px solid rebeccapurple;
+}
+
+#empty1 {
+    left: 200px;
+}
+
+#empty2 {
+    left: 253px;
+}
+
+#empty3 {
+    left: 355px;
+}
+
+#empty4 {
+    left: 403px;
+}
+
+#empty5 {
+    left: 453px;
+}
+
+
+@media (min-width: 992px) { 
+    #empty1 {
+        left: 320px;
+    }
+
+    #empty2 {
+        left: 373px;
+    }
+
+    #empty3 {
+        left: 471px;
+    }
+
+    #empty4 {
+        left: 523px;
+    }
+
+    #empty5 {
+        left: 576px;
+    }
+}
+
+#white {
+    color: white;
+}
+
+.land-img {
+    border: 1px solid purple;
+}
