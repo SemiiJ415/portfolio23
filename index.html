@@ -52,7 +52,7 @@
                         <div class="main-nav nav d-none d-md-block">
                             <ul class="main-nav nav justify-content-md-center main-nav-ul">
                                 <li class="main-nav-item nav-item text-uppercase about-item">
-                                    <a href="#about.html" class="nav-link main-nav-link about-link">about</a>
+                                    <a href="#aboutSection" class="nav-link main-nav-link about-link">about</a>
                                 </li>
                                 <li class="main-nav-item nav-item text-uppercase projects-item">
                                     <a href="#" class="nav-link main-nav-link d-none">projects</a>
@@ -61,7 +61,7 @@
                                     <a href="#" class="nav-link main-nav-link d-none">projects</a>
                                 </li>
                                 <li class="main-nav-item nav-item text-uppercase projects-item">
-                                    <a href="#" class="nav-link main-nav-link projects-link">projects</a>
+                                    <a href="#projectsSection" class="nav-link main-nav-link projects-link">projects</a>
                                 </li>
                                 <li class="main-nav-item nav-item text-uppercase contact-item">
                                     <a href="#" class="nav-link main-nav-link d-none">contact</a>
@@ -73,7 +73,7 @@
                                     <a href="#" class="nav-link main-nav-link contact-link">contact</a>
                                 </li>
                                 <li class="nav-item text-uppercase about-item empty" id="empty1">
-                                    <a href="#about.html" class="nav-link"></a>
+                                    <a href="#" class="nav-link"></a>
                                 </li>
                                 <li class="nav-item text-uppercase contact-item empty" id="empty2">
                                     <a href="#" class="nav-link main-nav-link"></a>
@@ -97,11 +97,11 @@
 
     <main class="main" id="main">
         <section class="section" id="aboutSection">
-            <div class="container">
+            <div class="container" id="aboutNavSection">
                 <div class="nav-section">
                     <div class="top-line"></div>
-                    <ul class="nav nav-list justify-content-end">
-                        <li class="nav-list-item">
+                    <ul class="nav nav-list justify-content-center">
+                        <li class="nav-list-item" id="homeNavItem">
                             <a href="#" class="nav-link main-top-nav-link">home</a>
                         </li>
                         <li class="nav-list-item">
@@ -119,21 +119,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6 profile-img">
-                        <img src="images/headshot1.jpeg" alt="headshot" class="img-fluid headshot">
+                        <img src="images/headshot1 (1).jpeg" alt="headshot" class="img-fluid headshot">
                     </div>
                     <div class="col-6 about-text">
                         <h2 class="about-heading text-center">about me</h2>
-                        <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sint voluptatum voluptatem sit iusto iure doloribus, excepturi laboriosam quod esse magni ipsum tempora veniam assumenda quidem libero, ex a tenetur. Doloribus eligendi a accusantium quia commodi inventore, quod cum. Quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis voluptates impedit repudiandae quas error ratione, sapiente at soluta fuga harum hic dolores odio ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae deserunt totam magni libero. Ipsum praesentium at expedita ab eligendi nesciunt?</p>
+                        <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sint voluptatum voluptatem sit iusto iure doloribus, excepturi laboriosam quod esse magni ipsum tempora veniam assumenda quidem libero, ex a tenetur. </p>
                         <button class="btn about-btn">learn more</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section" id="projectsSection">
-            <div class="container">
+            <div class="container" id="projectsNavSection">
                 <div class="nav-section">
                     <div class="top-line"></div>
-                    <ul class="nav nav-list justify-content-end">
+                    <ul class="nav nav-list justify-content-center">
                         <li class="nav-list-item">
                             <a href="#" class="nav-link main-top-nav-link">home</a>
                         </li>
@@ -153,53 +153,26 @@
                 <div class="row">
                     <h2 class="projects-heading text-uppercase text-success">projects</h2>
                     <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img card-img-top" />
-                            <div class="card-body">
-                                <h3 class="card-title"></h3>
-                                <p class="card-text display-6"></p>
-                                <p class="card-text"></p>
-                            </div>
-                            <footer class="card-footer">
-                                <p class="card-text"></p>
-                                <button class="btn btn-primary card-btn">add to cart</button>
-                            </footer>
+                        <div class="card project-card">
+                            <img src="images/projectpic1.png" alt="placeholder img" class="img-fluid card-img card-img-top" />
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img card-img-top" />
-                            <div class="card-body">
-                                <h3 class="card-title"></h3>
-                                <p class="card-text display-6"></p>
-                                <p class="card-text"></p>
-                            </div>
-                            <footer class="card-footer">
-                                <p class="card-text"></p>
-                                <button class="btn btn-primary card-btn">add to cart</button>
-                            </footer>
+                        <div class="card project-card">
+                            <img src="images/projectpic1.png" alt="placeholder img" class="img-fluid card-img card-img-top" />
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid card-img card-img-top" />
-                            <div class="card-body">
-                                <h3 class="card-title"></h3>
-                                <p class="card-text display-6"></p>
-                                <p class="card-text"></p>
-                            </div>
-                            <footer class="card-footer">
-                                <p class="card-text"></p>
-                                <button class="btn btn-primary card-btn">add to cart</button>
-                            </footer>
+                        <div class="card project-card">
+                            <img src="images/projectpic1.png" alt="placeholder img" class="img-fluid card-img card-img-top" />
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
-
         <section class="section" id="contactSection">
-            <div class="container">
+            <div class="container" id="contactNavSection">
                 <div class="nav-section">
                     <div class="top-line"></div>
                     <ul class="nav nav-list justify-content-end">
@@ -217,6 +190,91 @@
                         <li class="line" id="line6"></li>
                     </ul>
                 </div>
+            </div>
+            <div class="container" id="contactNavSocials">
+                <div class="main-nav nav d-none d-md-block">
+                    <ul class="main-nav nav justify-content-md-center main-nav-ul">
+                        <li class="main-nav-item nav-item text-uppercase about-item">
+                            <a href="#aboutSection" class="nav-link main-nav-link about-link">about</a>
+                        </li>
+                        <li class="main-nav-item nav-item text-uppercase projects-item">
+                            <a href="#" class="nav-link main-nav-link d-none">projects</a>
+                        </li>
+                        <li class="main-nav-item nav-item text-uppercase contact-item">
+                            <a href="#" class="nav-link main-nav-link d-none">projects</a>
+                        </li>
+                        <li class="main-nav-item nav-item text-uppercase projects-item">
+                            <a href="#projectsSection" class="nav-link main-nav-link projects-link">projects</a>
+                        </li>
+                        <li class="main-nav-item nav-item text-uppercase contact-item">
+                            <a href="#" class="nav-link main-nav-link d-none">contact</a>
+                        </li>
+                        <li class="main-nav-item nav-item text-uppercase contact-item">
+                            <a href="#" class="nav-link main-nav-link d-none">contact</a>
+                        </li>
+                        <li class="main-nav-item nav-item text-uppercase contact-item">
+                            <a href="#" class="nav-link main-nav-link contact-link">contact</a>
+                        </li>
+                        <li class="nav-item text-uppercase about-item empty" id="empty1">
+                            <a href="#" class="nav-link"></a>
+                        </li>
+                        <li class="nav-item text-uppercase contact-item empty" id="empty2">
+                            <a href="#" class="nav-link main-nav-link"></a>
+                        </li>
+                        <li class="nav-item text-uppercase contact-item empty" id="empty3">
+                            <a href="#" class="nav-link contacts-link"></a>
+                        </li>
+                        <li class="nav-item text-uppercase contact-item empty" id="empty4">
+                            <a href="#" class="nav-link contacts-link"></a>
+                        </li>
+                        <li class="nav-item text-uppercase contact-item empty" id="empty5">
+                            <a href="#" class="nav-link contacts-link"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <!-- <div class="contact-section">
+                    <div class="main-nav nav d-none d-md-block">
+                        <ul class="main-nav nav justify-content-md-center main-nav-ul">
+                            <li class="main-nav-item nav-item text-uppercase about-item">
+                                <a href="#aboutSection" class="nav-link main-nav-link about-link">about</a>
+                            </li>
+                            <li class="main-nav-item nav-item text-uppercase projects-item">
+                                <a href="#" class="nav-link main-nav-link d-none">projects</a>
+                            </li>
+                            <li class="main-nav-item nav-item text-uppercase contact-item">
+                                <a href="#" class="nav-link main-nav-link d-none">projects</a>
+                            </li>
+                            <li class="main-nav-item nav-item text-uppercase projects-item">
+                                <a href="#projectsSection" class="nav-link main-nav-link projects-link">projects</a>
+                            </li>
+                            <li class="main-nav-item nav-item text-uppercase contact-item">
+                                <a href="#" class="nav-link main-nav-link d-none">contact</a>
+                            </li>
+                            <li class="main-nav-item nav-item text-uppercase contact-item">
+                                <a href="#" class="nav-link main-nav-link d-none">contact</a>
+                            </li>
+                            <li class="main-nav-item nav-item text-uppercase contact-item">
+                                <a href="#" class="nav-link main-nav-link contact-link">contact</a>
+                            </li>
+                            <li class="nav-item text-uppercase about-item empty" id="empty1">
+                                <a href="#" class="nav-link"></a>
+                            </li>
+                            <li class="nav-item text-uppercase contact-item empty" id="empty2">
+                                <a href="#" class="nav-link main-nav-link"></a>
+                            </li>
+                            <li class="nav-item text-uppercase contact-item empty" id="empty3">
+                                <a href="#" class="nav-link contacts-link"></a>
+                            </li>
+                            <li class="nav-item text-uppercase contact-item empty" id="empty4">
+                                <a href="#" class="nav-link contacts-link"></a>
+                            </li>
+                            <li class="nav-item text-uppercase contact-item empty" id="empty5">
+                                <a href="#" class="nav-link contacts-link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
             </div>
         </section>
     </main>
