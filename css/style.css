@@ -49,7 +49,7 @@ section {
     font-weight: 600;
     font-family: var(--font1);
     background-color: #f7f7ff;
-    transition-duration: 1000ms;
+    /* transition-duration: 1000ms; */
     border: .5px solid rebeccapurple;
     border-top: 3px solid black;
 }
@@ -69,7 +69,7 @@ section {
     position: relative;
     /* height: auto; */
     width: fit-content;
-    top: 70px;
+    top: 50px;
     left: -40px;
     padding: 5px;
     /* cursor: url(/images/music-note.cur); */
@@ -150,20 +150,21 @@ section {
 }
 .nav-section {
     position: relative;
-    width: 45%;
+    width: 100%;
     margin-bottom: 10px;
-    height: 250px;
-    border: 1px solid #f7f7ff;
+    /* height: 200px; */
+    /* border: 1px solid #f7f7ff; */
 }
 
 .nav-list {
-    margin-top: 150px;
+    margin-top: 100px;
     /* border: 1px solid green; */
 }
 
 .nav-list-item {
-    padding: 10px;
     margin: 0 25px;
+    margin-bottom: 20px;
+    padding: 10px;
     border-radius: 100%;
     border: 1px solid #45c46f;
 }
@@ -180,32 +181,38 @@ section {
     box-shadow: inset -2px -1px 0px #146a7b;
 }
 
-.top-line {
-    width: 71%;
-    position: absolute;
-    right: 24px;
-    top: 20px;
-    border: 1px solid #146a7b;
-}
 
 .line {
     position: absolute;
-    height: 160px;
-    top: 20px;
+    height: 130px;
+    top: 10px;
     /* right: 400px; */
     border: 1px solid #45c46f;
 }
 
-#line1, #line4 {
-    right: 380px;
+
+#line1 {
+    left: 220px;
 }
 
-#line2, #line5 {
-    right: 210px;
+#line2 {
+    left: 399px;
 }
 
-#line3, #line6 {
-    right: 25px;
+#line3 {
+    right: 123px;
+}
+
+#line4 {
+    left: 230px;
+}
+
+#line5 {
+    left: 390px;
+}
+
+#line6 {
+    right: 133px;
 }
 
 #aboutSection {
