@@ -1,28 +1,32 @@
 :root {
-/* --font1: acme; */
-/* --font2: Black Ops One; */
-/* --font3: DM Serif Display; */
-/* --font4: Great Vibes; */
-/* --font5: Neuton; */
-/* --font6: Old Standard TT; */
-/* --font7: Prata; */
-/* --font8: Sacramento; */
 
 --font1: 'Acme', sans-serif;
---font3: 'DM Serif Display', serif;
---font4: 'Great Vibes', cursive;
---font6: 'Old Standard TT', serif;
---font7: 'Prata', serif;
---font8: 'Sacramento', cursive;
+--font2:'Big Shoulders Display', sans-serif;
+--font3: 'Neuton', serif; 
 
+}
+
+body {
+    /* background-color: #C0C999; */
+}
+
+html {
+    scroll-snap-type: y proximity;
 }
 
 section {
-    width: 100%;
-    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+@media (min-width: 768px) {
+    section {
+        width: 100%;
+        height: 100vh;
+    }
 }
 #landing {
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(/images/lightbg.png);
     background-clip: border-box;
     background-position: center;
@@ -32,6 +36,7 @@ section {
     /* border: 1px solid black; */
     /* height: max-content; */
 }
+
 .drop-link {
     font-family: var(--font1);
     font-weight: 700;
@@ -67,8 +72,9 @@ section {
 
 .about-link, .projects-link, .contact-link {
     position: relative;
-    /* height: auto; */
     width: fit-content;
+    color: black;
+    text-shadow: 1px 1px 5px #b26ef0;
     top: 50px;
     left: -40px;
     padding: 5px;
@@ -116,23 +122,23 @@ section {
 @media (min-width: 992px) { 
     
 #empty1 {
-    left: 335px;
+    left: 425px;
 }
 
 #empty2 {
-    left: 415px;
+    left: 505px;
 }
 
 #empty3 {
-    left: 580px;
+    left: 670px;
 }
 
 #empty4 {
-    left: 660px;
+    left: 750px;
 }
 
 #empty5 {
-    left: 740px;
+    left: 833px;
 }
 } 
 
@@ -141,8 +147,56 @@ section {
 }
 
 .land-img {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
+
+.music {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.music2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* animation-name: slideInRight; */
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+/* 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transition: translateX(-20px)
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100)
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transition: translateX(-20px)
+    }
+} */
 
 #aboutNavSection, #projectsNavSection, #contactNavSection {
     display: flex;
@@ -160,6 +214,7 @@ section {
     margin-top: 100px;
     /* border: 1px solid green; */
 }
+
 
 .nav-list-item {
     margin: 0 25px;
@@ -179,6 +234,10 @@ section {
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
     border-radius: 50%;
     box-shadow: inset -2px -1px 0px #146a7b;
+}
+
+.main-top-nav-link:hover {
+    background-color: #333;
 }
 
 
@@ -215,48 +274,163 @@ section {
     right: 133px;
 }
 
-#aboutSection {
-    background-color: #b26ef0;
+@media (min-width: 992px) {
+    
+#line1 {
+    left: 515px;
 }
 
+#line2 {
+    left: 700px;
+}
+
+#line3 {
+    right: 413px;
+}
+
+#line4 {
+    left: 525px;
+}
+
+#line5 {
+    left: 690px;
+}
+
+#line6 {
+    right: 425px;
+}
+}
+
+#aboutSection {
+    position: relative;
+    padding: 100px 0;
+    background-color: #b26ef0;
+    background-image: url(/images/headshot2\ \(1\).jpeg);
+}
+
+@media (min-width: 768px) {
+        #aboutSection {
+        position: relative;
+        padding: 40px 0;
+        background-color: #b26ef0;
+        background-image: url(/images/music.png);
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-position: 20%, 30%;
+    } 
+
+}
+
+
+
 .headshot {
-    margin-left: 30%;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    margin-left: 80px;
+}
+
+@media  (min-width: 768px) {
+    .headshot {
+        position: absolute;
+        top: 30px;
+        right: 200px;
+        animation: slideInRight 4s ease-in-out both ;
+    } 
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(900px)
+    }
+    50% {
+        transform: translateX(-40px);
+    }
+    100% {
+        transition: translateX(-20px)
+    }
 }
 
 .about-heading {
-    margin: 30px;
+    margin: 10px;
+    font-family: var(--font1);
+    font-size: calc(32px + (36 - 32) * ((100vw - 300px) / (1600 - 300)));
     color: #45c46f;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px black;
 }
 
+
 .about-text {
-    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
-    color: #353535;
+    opacity: 0;
+}
+@media (min-width: 768px) {
+    .about-text {
+        opacity: 1;
+        font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+        color: black;
+        text-shadow: 1px 1px 3px #f7f7ff;
+    }
+
 }
 
 .about-btn {
-    margin-top: 30px;
-    text-transform: uppercase;
-    color: #f7f7ff;
-    background-color: #45c46f;
+    margin-left: 100px;
+    color: black;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px #45c46f;
+    /* background-color: #45c46f; */
+    border: 3px solid #45c46f;
 }
 
-.projects-heading{
+.projects-heading, .contact-heading{
     font-family: var(--font1);
+    font-size: calc(32px + (36 - 32) * ((100vw -  300px) / (1600 - 300)));
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow: 1px 1px 10px #f7f7ff;
+    box-shadow: inset -2px -1px 0px #146a7b;
+    border-left: 2px solid #f7f7ff;
 }
 
 #projectsSection {
+    padding: 40px 0;
     border-bottom: 2px solid #45c46f;
 }
+
 
 #cardSection {
     margin-bottom: 50px;
 }
 
+.doja {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
 .project-card:hover {
     margin-top: -10px;
 }
 
+#contactSection {
+    margin-top: 60px;
+    padding-top: 40px;
+    background-image: url(/images/music.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: 20%, 30%;
+    /* border: 2px solid red; */
+}
+
+.contact-socials-list {
+    display: flex;
+    height: 700px;
+    /* border: 1px solid purple; */
+}
+
+.contact-list-item {
+    list-style-type: none;
+    margin: 20px;
+    /* border: 1px solid orange; */
+}
