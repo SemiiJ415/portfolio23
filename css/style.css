@@ -7,7 +7,7 @@
 }
 
 body {
-    /* background-color: #C0C999; */
+    background-color: #070600;
 }
 
 html {
@@ -26,15 +26,18 @@ section {
     }
 }
 #landing {
-    /* height: 100vh; */
     background-image: url(/images/lightbg.png);
     background-clip: border-box;
     background-position: center;
     background-origin: padding-box;
     background-repeat: no-repeat;
     background-size: cover;
-    /* border: 1px solid black; */
-    /* height: max-content; */
+    
+}
+
+.top-dropdown-left {
+    position: relative;
+    left: -15px;
 }
 
 .drop-link {
@@ -54,7 +57,6 @@ section {
     font-weight: 600;
     font-family: var(--font1);
     background-color: #f7f7ff;
-    /* transition-duration: 1000ms; */
     border: .5px solid rebeccapurple;
     border-top: 3px solid black;
 }
@@ -146,57 +148,17 @@ section {
     color: white;
 }
 
-.land-img {
-    /* border: 1px solid purple; */
-}
-
 .music {
     position: absolute;
     bottom: 0;
     left: 0;
-    animation-name: slideInLeft;
-    animation-duration: 5s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
 }
 
 .music2 {
     position: absolute;
     bottom: 0;
     left: 0;
-    /* animation-name: slideInRight; */
-    animation-duration: 5s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
 }
-/* 
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(0)
-    }
-    50% {
-        transform: translateX(50px);
-    }
-    100% {
-        transition: translateX(-20px)
-    }
-}
-
-@keyframes slideInRight {
-    0% {
-        transform: translateX(100)
-    }
-    50% {
-        transform: translateX(50px);
-    }
-    100% {
-        transition: translateX(-20px)
-    }
-} */
 
 #aboutNavSection, #projectsNavSection, #contactNavSection {
     display: flex;
@@ -207,12 +169,12 @@ section {
     width: 100%;
     margin-bottom: 10px;
     /* height: 200px; */
-    /* border: 1px solid #f7f7ff; */
+    border: 1px solid #f7f7ff;
 }
 
 .nav-list {
     margin-top: 100px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 
@@ -228,7 +190,7 @@ section {
 .main-top-nav-link {
     color: #45c46f;
     text-shadow: 1px 1px 1px black;
-    font-family: var(--font1);
+    font-family: var(--font3);
     font-weight: 700;
     text-transform: uppercase;
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -351,22 +313,51 @@ section {
     }
 }
 
+@media (min-width: 768px) {
+    #headshotAndText {
+        margin-right: 20px;
+    }
+
+}
+
 .about-heading {
     margin: 10px;
-    font-family: var(--font1);
-    font-size: calc(32px + (36 - 32) * ((100vw - 300px) / (1600 - 300)));
+    font-family: var(--font2);
+    font-size: calc(42px + (46 - 42) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 600;
     color: #45c46f;
     text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
+}
+@media (max-width: 575px) {
+    .about-heading {
+        margin-top: -90px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-heading {
+        position: relative;
+        right: 320px;
+    }
+}
+
+.codingAcad {
+    color: #45c46f;
     text-shadow: 1px 1px 1px black;
 }
-
-
 .about-text {
     opacity: 0;
+    font-family: var(--font1);
 }
+.hide {
+    opacity: 0;
+}
+
 @media (min-width: 768px) {
     .about-text {
         opacity: 1;
+        font-family: var(--font1);
         font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
         color: black;
         text-shadow: 1px 1px 3px #f7f7ff;
@@ -376,21 +367,26 @@ section {
 
 .about-btn {
     margin-left: 100px;
-    color: black;
+    font-family: var(--font1);
     font-weight: 600;
     text-shadow: 1px 1px 4px #45c46f;
-    /* background-color: #45c46f; */
-    border: 3px solid #45c46f;
+    background-color: #45c46f;
+    color: black;
+    border: 1px solid black;
+}
+
+.about-btn:hover {
+    background-color: #146a7b;
 }
 
 .projects-heading, .contact-heading{
+    margin-top: 20px;
+    margin-bottom: 0;
     font-family: var(--font1);
     font-size: calc(32px + (36 - 32) * ((100vw -  300px) / (1600 - 300)));
     font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: black;
-    text-shadow: 1px 1px 10px #f7f7ff;
+    color: #f7f7ff;
+    text-shadow: 1px 1px 10px #146a7b;
     box-shadow: inset -2px -1px 0px #146a7b;
     border-left: 2px solid #f7f7ff;
 }
@@ -406,16 +402,26 @@ section {
 }
 
 .doja {
-    margin-top: 60px;
+    margin-top: 83px;
     margin-bottom: 0;
+}
+
+
+.rest, .juice {
+    margin-bottom: 0;
+}
+
+.project-card {
+    margin-top: 0;
+    border: 1px solid pink;
 }
 .project-card:hover {
     margin-top: -10px;
 }
 
 #contactSection {
-    margin-top: 60px;
-    padding-top: 40px;
+    /* margin-top: 60px; */
+    /* padding-top: 40px; */
     background-image: url(/images/music.png);
     background-repeat: no-repeat;
     background-clip: border-box;
@@ -423,11 +429,20 @@ section {
     /* border: 2px solid red; */
 }
 
+
 .contact-socials-list {
     display: flex;
-    height: 700px;
+    height: 200px;
+    padding: 0;
     /* border: 1px solid purple; */
 }
+
+@media (min-width: 768px) {
+    .contact-socials-list {
+        display: flex;
+        height: 700px;
+}
+}  
 
 .contact-list-item {
     list-style-type: none;
@@ -435,14 +450,27 @@ section {
     /* border: 1px solid orange; */
 }
 
-/* about */
-
-body {
-    background-color: #070600;
+.email-form {
+    color: #f7f7ff;
+    /* border: 1px solid peru; */
 }
-#about-head {
-    border: 1px solid blue;
-    height: 200px;
+
+#footerSection {
+    height: 100px;
+}
+
+.colophon {
+    margin-top: 50px;
+}
+
+/* about page--------------------------------------------- */
+
+
+@media (min-width: 768px) {
+    #about-head {
+        /* border: 1px solid blue; */
+        height: 230px;
+    }
 }
 .about-nav-section {
     /* background-color: #f7f7ff; */
@@ -450,18 +478,24 @@ body {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: 50%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-top: 0;
     padding-top: 10px;
 }
 
 .about-section-heading {
-    width: 30%;
+    width: 80%;
     color: #f7f7ff;
     font-family: var(--font2);
     font-weight: 700;
     font-size: calc(40px + (44 - 40) * ((100vw - 300px) / (1600 - 300)));
-    border: 1px solid orange;
+
+}
+
+@media (min-width: 768px) {
+    .about-section-heading {
+        width: 30%;
+    }
 }
 
 .typewriter h2 {
@@ -470,7 +504,7 @@ body {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .15em;
-    animation: typing 3.5s steps(15, end), blink-caret 1s step-end infinite;
+    animation: typing 1s steps(20, end), blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
@@ -483,3 +517,73 @@ body {
     50% {border-right-color: #45c46f;}
 } 
 
+
+.skate {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.about-card-list {
+    margin-left: 30px;
+}
+
+.about-card-heading {
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
+}
+
+.about-cards{
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    font-family: var(--font1);
+    font-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+    color: #f7f7ff;
+    background-color: #146a7b;
+    box-shadow: 10px 10px 5px#45c46f;
+}
+
+.skate-bitmoji {
+    position: absolute;
+    top: 190px;
+    left: -280px;
+    z-index: 1;
+}
+
+.about-design-text, .about-artist-text, .developer-list-item {
+    margin-top: 20px;
+    font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-family: var(--font2);
+    font-weight: 600;
+}
+
+.photos {
+    padding-top: 60px;
+}
+
+.music-section-box {
+    margin-top: 40px;
+    border: 2px solid #45c46f;
+
+}
+
+
+@media (min-width: 768px){
+    .music-section-box {
+        margin-top: 80px;
+        width: 600px;
+        height: 400px;
+        border: 2px solid #45c46f;
+    }
+}
+
+.beats-heading, .original-song-heading {
+    margin: 10px 0 40px 0;
+    color: #146a7b;
+}
+
+.beat-cap {
+    color: #f7f7ff;
+}

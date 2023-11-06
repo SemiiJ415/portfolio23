@@ -13,43 +13,140 @@
 <body>
     <header class="header" id="about-head">
         <section class="headerSection">
-            <div class="container">
-                <div class="row">
-                    <div class="nav-section">
-                        <ul class="nav nav-list justify-content-center d-none d-md-flex about-nav-section">
-                            <li class="nav-list-item">
-                                <a href="index.html#landing" class="nav-link main-top-nav-link">home</a>
-                            </li>
-                            <li class="nav-list-item">
-                                <a href="index.html#projectsSection" class="nav-link main-top-nav-link">projects</a>
-                            </li>
-                            <li class="nav-list-item">
-                                <a href="index.html#contactSection" class="nav-link main-top-nav-link">contact</a>
-                            </li>
-                        </ul>
+            <div class="container" id="projectsNavSection">
+                <div class="nav-section">
+                    <div class="dropdown-div d-flex d-md-none">
+                        <div class="dropdown mx-auto">
+                            <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#45c46f" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu drop-menu">
+                                <li class="drop-item">
+                                    <a href="index.html#landing" class="dropdown-item drop-link text-uppercase">home
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="index.html#projectsSection" class="dropdown-item drop-link text-uppercase">projects
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+                                            <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="drop-item">
+                                    <a href="index.html#contactSection" class="dropdown-item drop-link text-uppercase">contact
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-rolodex" viewBox="0 0 16 16">
+                                            <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                            <path d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1H1Zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1V2Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <ul class="nav nav-list justify-content-center d-none d-md-flex">
+                        <li class="nav-list-item">
+                            <a href="index.html#landing" class="nav-link main-top-nav-link">home</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="index.html#projectsSection" class="nav-link main-top-nav-link">projects</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="index.html#contactSection" class="nav-link main-top-nav-link">contact</a>
+                        </li>
+                        <li class="line" id="line4"></li>
+                        <li class="line" id="line5"></li>
+                        <li class="line" id="line6"></li>
+                    </ul>
                 </div>
             </div>
-            <div class="skate">
-                <img src="images/skates-removebg-preview.png" alt="">
+            <div class="skate d-none d-md-block">
+                <img src="images/skates-removebg-preview.png" alt="" class="">
+            </div>
+            <div class="skate-img d-none d-md-block">
+                <img src="images/1.png" alt="" class="skate-bitmoji img-fluid">
             </div>
         </section>
     </header>
 
     <main class="main">
-        <section class="section1">
+        <section class="section" id="description">
             <div class="head typewriter">
                 <h2 class="about-section-heading text-uppercase text-center">
                     who is jarissa?
                 </h2>
             </div>
+            <div class="container">
+                <div class="about-card-list row justify-content-between">
+                    <div class=" about-cards">
+                        <h3 class="about-card-heading text-uppercase text-center">designer</h3>
+                        <p class="about-design-text text-center">When it comes to creating I am in my element. I have created countless designs whether it be for personal use or for a client. When it comes to design, it's one of my favorite sections of a project. I love the aspect of taking someone's thoughts and birnging them to life on a page!</p>
+                    </div>
+                    <div class=" about-cards">
+                        <h3 class="about-card-heading text-uppercase text-center">developer</h3>
+                        <ul class="developer-list">
+                            <h4 class="developer-heading text-capitalize">languages i know</h4>
+                            <li class="developer-list-item">HTML</li>
+                            <li class="developer-list-item">CSS</li>
+                            <li class="developer list-item list-unstyled">
+                                <img src="images/html5-css3.webp" alt="html5 & CSS logos">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-cards">
+                        <h3 class="about-card-heading text-uppercase text-center">artist</h3>
+                        <p class="about-artist-text text-center">I endow the name artist because I create art in several ways. My artistic talents include: writing, singing, producing, designing, skating, and dancing. While coding is my new form of art, music has always been my passion. When you break it down, making a beat is like writing code, it all starts with an idea, followed by structuring those ideas.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="section2"></section>
-        <section class="section3"></section>
+        <section class="section" id="pictures">
+            <div class="container">
+                <div class="photos row">
+                    <img src="images/me1.jpg" alt="" class="col-4 img-fluid">
+                    <img src="images/me2.jpg" alt="" class="col-4 img-fluid">
+                    <img src="images/me3.jpg" alt="" class="col-4 img-fluid">
+                </div>
+            </div>
+        </section>
+        <section class="section" id="musicSection">
+            <div class="container">
+                <div class="row muisc-section justify-content-between">
+                    <div class="music-section-box col-md-6" id="beats">
+                        <h3 class="beats-heading text-center">Beats/Instrumentals</h3>
+                        <audio src="media/Guitar swing.m4a" controls></audio><p class="caption d-inline text-capitalize beat-cap">guitar swing</p>
+                        <audio src="media/MerryUm🗣👥 .m4a" controls></audio><p class="caption d-inline beat-cap">MerryUm🗣👥</p>
+                        <audio src="media/Guitar swing_m4a-[AudioTrimmer.com].mp3" controls></audio><p class="caption d-inline text-capitalize beat-cap">guitar swing reversed</p>
+                    </div>
+                    <div class="music-section-box col-md-6" id="original-songs">
+                        <h3 class="original-song-heading text-center">Original Songs</h3>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkeashia601%2Fvideos%2F10217588130559435%2F&show_text=false&width=560&t=0" width="450" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" class="overflow-hidden"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-
+    <footer class="footer" id="footer">
+        <section class="section" id="footerSection">
+            <div class="container">
+                <div class="colophon d-flex justify-content-md-around">
+                    <a href="index.html#contactSection" class="display-6 footer-heading text-capitalize text-decoration-none">get in touch</a>
+                    <p class="colophon">&copy; SemiiJ 2023</p>
+                </div>
+                <div class="backToTop row text-end">
+                    <a href="#landing" class="back-top-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </footer>
     <script src="js/app.js"></script>
 

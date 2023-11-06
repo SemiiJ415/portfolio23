@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +12,6 @@
 </head>
 <body>
     <header class="header">
-
-        <!-- add animated loading scrreen!!!! -->
         <section class="section" id="landing">
             <div class="container">
                 <div class="landing-img">
@@ -23,7 +20,7 @@
                 <div class="row" id="homeNav">
                     <div class="col-md">
                         <div class="dropdown-div d-flex d-md-none">
-                            <div class="dropdown mx-auto">
+                            <div class="dropdown top-dropdown-left">
                                 <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="#000000" class="bi bi-list" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -118,65 +115,12 @@
 
     <main class="main" id="main">
         <section class="section" id="aboutSection">
-            <div class="container" id="aboutNavSection">
-                <div class="nav-section">
-                    <!-- <div class="dropdown-div d-flex d-md-none">
-                        <div class="dropdown mx-auto">
-                            <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#45c46f" class="bi bi-list" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                </svg>
-                            </button>
-                            <ul class="dropdown-menu drop-menu">
-                                <li class="drop-item">
-                                    <a href="#aboutSection" class="dropdown-item drop-link text-uppercase">about
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="drop-item">
-                                    <a href="#projectsSection" class="dropdown-item drop-link text-uppercase">projects
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
-                                            <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="drop-item">
-                                    <a href="#contactSection" class="dropdown-item drop-link text-uppercase">contact
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-rolodex" viewBox="0 0 16 16">
-                                            <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                                            <path d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1H1Zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1V2Z"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
-                    <!-- <div class="top-line"></div> -->
-                    <!-- <ul class="nav nav-list about-nav-list justify-content-center d-none d-md-flex">
-                        <li class="nav-list-item" id="homeNavItem">
-                            <a href="#landing" class="nav-link main-top-nav-link">home</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a href="#projectsSection" class="nav-link main-top-nav-link">projects</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a href="#contactSection" class="nav-link main-top-nav-link">contact</a>
-                        </li>
-                        <div class="lines">
-                            <li class="line" id="line1"></li>
-                            <li class="line" id="line2"></li>
-                            <li class="line" id="line3"></li>
-                        </div>
-                    </ul> -->
-                </div>
-            </div>
             <div class="container" id="headshotAndText">
+                <h2 class="about-heading text-center">who is jarissa?</h2>
                 <div class="row">
                     <div class="col-md-6 about text-center">
-                        <h2 class="about-heading">who is jarissa?</h2>
-                        <p class="about-text text-md-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sint voluptatum voluptatem sit iusto iure doloribus, excepturi laboriosam quod esse magni ipsum tempora veniam assumenda quidem libero, ex a tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur sed, reprehenderit corrupti officia quidem? Nesciunt iusto quia quis reprehenderit sunt veritatis laboriosam Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nisi nostrum earum vitae vel magnam unde veritatis, beatae eligendi quae saepe cum, fugiat necessitatibus nobis, blanditiis mollitia! Rem aut quisquam ad. Reprehenderit.</p>
+                        <p class="about-text text-md-end">Well it depends on who you ask but if you ask me she's a jack of many trades! I pride myself in being openminded and enjoy trying new things which is how I ended up here at the <a href="https://mscoding.org/" target="_blank" class="codingAcad text-decoration-none">MS coding academy</a> with the greatest instructor to ever LIVEEEE. I grew up in the myspace days where webpage customization was a must and if you didn't have the perfect song playing on your profile then you were definitely doing it wrong! Computers have always been something I was passionate about, it would be the main thing on my Christmas list each year. I noticed everytime I would do things for fun or just personal use it would be technical related where I had to use some form of technology so this lead me down the path of coding. While looking for a career where I am always learning and more than likely will never have the same work day, I found that coding is a great place to start! </p>
+                        <p class="hide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ratione quis corporis. Vero id consectetur, impedit accusamus est repudiandae? Aspernatur facere omnis iusto reprehenderit, atque nemo accusantium culpa praesentium labore eius error, veniam neque? Autem officiis labore, quas debitis consequuntur atque sunt officia facilis velit enim odit vel, ipsam minima.</p>
                         <a href="about.html" class="about-link text-uppercase btn about-btn">learn more</a>
                     </div>
                     <div class="d-none d-md-block col-md-6 profile-img">
@@ -184,21 +128,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="container">
-                <div class="backToTop row text-end d-none d-md-block">
-                    <a href="#landing" class="back-top-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div> -->
         </section>
         <section class="section" id="projectsSection">
             <div class="container" id="projectsNavSection">
                 <div class="nav-section">
-                    <!-- <div class="top-line"></div> -->
                     <div class="dropdown-div d-flex d-md-none">
                         <div class="dropdown mx-auto">
                             <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -208,16 +141,16 @@
                             </button>
                             <ul class="dropdown-menu drop-menu">
                                 <li class="drop-item">
-                                    <a href="#aboutSection" class="dropdown-item drop-link text-uppercase">about
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                                    <a href="#landing" class="dropdown-item drop-link text-uppercase">home
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="drop-item">
-                                    <a href="#projectsSection" class="dropdown-item drop-link text-uppercase">projects
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
-                                            <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+                                    <a href="#aboutSection" class="dropdown-item drop-link text-uppercase">about
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
                                         </svg>
                                     </a>
                                 </li>
@@ -257,7 +190,10 @@
                                 <img src="images/projectpic1.png" alt="placeholder img" class="img-fluid card-img card-img-top" />
                             </a>
                             <div class="card-body">
-                                <p class="card-text">HTML & CSS: Juice & Smoothie Bar.</p>
+                                <p class="card-text juice">HTML & CSS: Juice & Smoothie Bar.</p>
+                                <p class="card-text">
+                                    <a href="https://semiij415.github.io/smoothjuice/" target="_blank">Click to DEMO</a>
+                                </p>
                             </div>
                             <footer class="card-footer">
                                 <p class="card-text text-success">CLICK IMAGE FOR MORE INFO</p>
@@ -270,7 +206,10 @@
                                 <img src="images/restuarant.jpg" alt="placeholder img" class="img-fluid card-img card-img-top" />
                             </a>
                             <div class="card-body">
-                                <p class="card-text">HTML & CSS: Restaurant.</p>
+                                <p class="card-text rest">HTML & CSS: Restaurant.</p>
+                                <p class="card-text">
+                                    <a href="https://semiij415.github.io/restaurant23/" target="_blank">Click to DEMO</a>
+                                </p>
                             </div>
                             <footer class="card-footer">
                                 <p class="card-text text-success">CLICK IMAGE FOR MORE INFO</p>
@@ -301,7 +240,6 @@
         <section class="section" id="contactSection">
             <div class="container" id="contactNavSection">
                 <div class="nav-section">
-                    <!-- <div class="top-line"></div> -->
                     <div class="dropdown-div d-flex d-md-none">
                         <div class="dropdown mx-auto">
                             <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -310,6 +248,13 @@
                                 </svg>
                             </button>
                             <ul class="dropdown-menu drop-menu">
+                                <li class="drop-item">
+                                    <a href="#landing" class="dropdown-item drop-link text-uppercase">home
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
                                 <li class="drop-item">
                                     <a href="#aboutSection" class="dropdown-item drop-link text-uppercase">about
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
@@ -321,14 +266,6 @@
                                     <a href="#projectsSection" class="dropdown-item drop-link text-uppercase">projects
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
                                             <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="drop-item">
-                                    <a href="#contactSection" class="dropdown-item drop-link text-uppercase">contact
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-rolodex" viewBox="0 0 16 16">
-                                            <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                                            <path d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1H1Zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1V2Z"/>
                                         </svg>
                                     </a>
                                 </li>
@@ -356,12 +293,11 @@
                     <h3 class="text-uppercase text-center contact-heading ">Contact me</h3>
                     <ul class="main-nav nav justify-content-md-center main-nav-ul">
                         <li class="main-nav-item nav-item text-uppercase about-item">
-                            <a href="#aboutSection" class="nav-link main-nav-link about-link" target="_blank" rel="noopener noreferrer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-                                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                            <a href="https://www.instagram.com/semiij_415/" class="nav-link main-nav-link about-link" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                                 </svg>
-                                Email</a>
+                                insta</a>
                         </li>
                         <li class="main-nav-item nav-item text-uppercase projects-item">
                             <a href="#" class="nav-link main-nav-link d-none">projects</a>
@@ -414,12 +350,11 @@
                     <h3 class="text-uppercase text-center contact-heading d-md-none">Contact me</h3>
                     <ul class="justify-content-center align-items-center contact-socials-list d-md-none">
                         <li class="text-uppercase contact-list-item">
-                            <a href="#" class="email" target="_blank" rel="noopener noreferrer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-                                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                            <a href="https://www.instagram.com/semiij_415/" class="instagram" target="_blank" rel="noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                                 </svg>
-                                <span class="hide d-none">Email</span></a>
+                                <span class="hide d-none">Instagram</span></a>
                         </li>
                         <li class="text-uppercase contact-list-item">
                             <a href="https://github.com/SemiiJ415" class="github" target="_blank" rel="noopener noreferrer">
@@ -445,8 +380,27 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+                <div class="email-form text-center" id="emailme">
+                    <form action="mailto:jahrissalogic@gmail.com" method="get">
+                        <h4 class="email-me text-capitalize">email me</h4>
+                        Name: <br>
+                        <input type="text" name="subject" placeholder="Your Name"><br>
+                        Email:<br>
+                        <input type="email" name="email" placeholder="Your Email"><br>
+                        Message:<br>
+                        <textarea name="body" rows="3" cols="30" placeholder="Your Message"></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <section class="section" id="footerSection">
             <div class="container">
+                <div class="colop d-flex justify-content-around">
+                    <p class="colophon">&copy; SemiiJ 2023</p>
+                </div>
                 <div class="backToTop row text-end">
                     <a href="#landing" class="back-top-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
@@ -456,19 +410,6 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer" id="footer">
-        <!-- <section class="section" id="footerSection">
-            <div class="container">
-                <div class="backToTop row text-end">
-                    <a href="#landing" class="back-top-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section> -->
     </footer>
     <script src="js/app.js"></script>
 
