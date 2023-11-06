@@ -434,3 +434,52 @@ section {
     margin: 20px;
     /* border: 1px solid orange; */
 }
+
+/* about */
+
+body {
+    background-color: #070600;
+}
+#about-head {
+    border: 1px solid blue;
+    height: 200px;
+}
+.about-nav-section {
+    /* background-color: #f7f7ff; */
+    /* background-image: url(/images/sheetmusicc.png); */
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: 50%;
+    border: 1px solid green;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.about-section-heading {
+    width: 30%;
+    color: #f7f7ff;
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: calc(40px + (44 - 40) * ((100vw - 300px) / (1600 - 300)));
+    border: 1px solid orange;
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    border-right: 3px solid #45c46f;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(15, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0;}
+    to {width: 25%;}
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent;}
+    50% {border-right-color: #45c46f;}
+} 
+
