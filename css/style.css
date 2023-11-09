@@ -57,7 +57,7 @@ section {
     position: relative;
     width:100%;
     height: 150px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .main-nav-item {
@@ -137,6 +137,28 @@ section {
         left: 833px;
     }
 } 
+
+@media (min-width: 1023px) {
+    #empty1 {
+        right: 200px;
+    }
+    
+    #empty2 {
+        right: 160px;
+    }
+    
+    #empty3 {
+        right: 80px;
+    }
+    
+    #empty4 {
+        right: 40px;
+    }
+    
+    #empty5 {
+        right: 0;
+    }
+}
 
 #white {
     color: white;
@@ -267,6 +289,20 @@ section {
 }
 }
 
+@media (min-width: 1023px) {
+    #line4 {
+        left: 515px;
+    }
+    
+    #line5 {
+        left: 685px;
+    }
+    
+    #line6 {
+        right: 585px;
+    }
+}
+
 #aboutSection {
     position: relative;
     padding: 100px 0;
@@ -280,13 +316,17 @@ section {
         #aboutSection {
         position: relative;
         padding: 40px 0;
-        background-color: #b26ef0;
         background-image: url(/images/music.png);
         background-repeat: no-repeat;
         background-clip: border-box;
         background-position: 20%, 30%;
     } 
+}
 
+@media (min-width: 1024px) {
+    #aboutSection {
+    background-image: none;
+} 
 }
 
 
@@ -315,6 +355,15 @@ section {
     } 
 }
 
+@media (min-width: 1023px) {
+    .headshot {
+        position: absolute;
+        top: 230px;
+        right: 30px;
+        animation: slideInRight 2s ease-in-out both ;
+    }
+}
+
 @keyframes slideInRight {
     0% {
         transform: translateX(900px)
@@ -332,6 +381,13 @@ section {
         margin-right: 20px;
     }
 
+}
+
+@media (min-width: 1023px) {
+    #headshotAndText {
+        margin-right: 20px;
+        margin-top: 40px;
+    }
 }
 
 .about-heading {
@@ -356,6 +412,13 @@ section {
     }
 }
 
+@media (min-width: 1024px) {
+    .about-heading {
+        position: relative;
+        right: 200px;
+    }
+}
+
 .codingAcad {
     color: #45c46f;
     text-shadow: 1px 1px 1px black;
@@ -371,6 +434,15 @@ section {
         font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
         color: black;
         text-shadow: 1px 1px 3px #f7f7ff;
+    }
+
+}
+
+@media (min-width: 1023px) {
+    .about-text {
+        margin-top: 80px;
+        font-size: calc(24px + (20 - 24) * ((100vw - 300px) / (1600 - 300)));
+        
     }
 
 }
@@ -393,6 +465,12 @@ section {
 @media (min-width: 768px) {
     .about-btn {
         margin-top: 360px;
+        font-size: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
+    }
+}
+@media (min-width: 1023px) {
+    .about-btn {
+        margin-top: 60px;
         font-size: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
     }
 }
@@ -572,6 +650,13 @@ section {
     color: #f7f7ff;
     background-color: #146a7b;
     box-shadow: 10px 10px 5px#45c46f;
+}
+
+@media (min-width: 767px) {
+    .about-cards {
+        width: 100%;
+        height: 250px;
+    }
 }
 
 .skate-bitmoji {
