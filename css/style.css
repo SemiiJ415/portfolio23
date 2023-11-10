@@ -57,7 +57,6 @@ section {
     position: relative;
     width:100%;
     height: 150px;
-    border: 1px solid green;
 }
 
 .main-nav-item {
@@ -84,9 +83,7 @@ section {
     transform: scaleX(0.9);
 }
 
-
-
-.empty {
+.black {
     position: absolute;
     width: 40px;
     height: 80px;
@@ -94,74 +91,114 @@ section {
     border: 1px solid rebeccapurple;
 }
 
-#empty1 {
+#black1 {
     left: 125px;
 }
 
-#empty2 {
+#black2 {
     left: 205px;
 }
 
-#empty3 {
+#black3 {
     left: 370px;
 }
 
-#empty4 {
+#black4 {
     left: 450px;
 }
 
-#empty5 {
+#black5 {
     left: 530px;
 }
 
 
 @media (min-width: 992px) { 
     
-    #empty1 {
+    #black1 {
         left: 425px;
     }
     
-    #empty2 {
+    #black2 {
         left: 505px;
     }
     
-    #empty3 {
+    #black3 {
         left: 670px;
     }
     
-    #empty4 {
+    #black4 {
         left: 750px;
     }
     
-    #empty5 {
+    #black5 {
         left: 833px;
     }
 } 
 
 @media (min-width: 1023px) {
-    #empty1 {
+    #black1 {
         right: 200px;
     }
     
-    #empty2 {
+    #black2 {
         right: 160px;
     }
     
-    #empty3 {
+    #black3 {
         right: 80px;
     }
     
-    #empty4 {
+    #black4 {
         right: 40px;
     }
     
-    #empty5 {
+    #black5 {
         right: 0;
     }
 }
 
-#white {
-    color: white;
+@media (min-width: 1318px) {
+    #black1 {
+        left: 330px;
+    }
+    
+    #black2 {
+        left: 415px;
+    }
+    
+    #black3 {
+        left: 580px;
+    }
+    
+    #black4 {
+        left: 660px;
+    }
+    
+    #black5 {
+        left: 740px;
+    }
+}
+
+@media (min-width: 1399px) {
+    #black1 {
+        left: 425px;
+    }
+    
+    #black2 {
+        left: 505px;
+    }
+    
+    #black3 {
+        left: 670px;
+    }
+    
+    #black4 {
+        left: 750px;
+    }
+    
+    #black5 {
+        left: 830px;
+    }
 }
 
 .about-link, .projects-link, .contact-link {
@@ -180,11 +217,6 @@ section {
     left: 0;
 }
 
-.music2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
 #aboutNavSection, #projectsNavSection, #contactNavSection {
     display: flex;
@@ -194,7 +226,6 @@ section {
     position: relative;
     width: 100%;
     margin-bottom: 10px;
-    /* height: 200px; */
     border: 1px solid #f7f7ff;
 }
 
@@ -228,15 +259,12 @@ section {
     background-color: #333;
 }
 
-
 .line {
     position: absolute;
     height: 130px;
     top: 10px;
-    /* right: 400px; */
     border: 1px solid #45c46f;
 }
-
 
 #line1 {
     left: 220px;
@@ -303,6 +331,34 @@ section {
     }
 }
 
+@media (min-width: 1319px) {
+    #line4 {
+        left: 440px;
+    }
+    
+    #line5 {
+        left: 595px;
+    }
+    
+    #line6 {
+        left: 770px;
+    }
+}
+
+@media (min-width: 1399px) {
+    #line4 {
+        left: 530px;
+    }
+    
+    #line5 {
+        left: 686px;
+    }
+    
+    #line6 {
+        left: 860px;
+    }
+}
+
 #aboutSection {
     position: relative;
     padding: 100px 0;
@@ -314,7 +370,6 @@ section {
 
 @media (min-width: 768px) {
         #aboutSection {
-        position: relative;
         padding: 40px 0;
         background-image: url(/images/music.png);
         background-repeat: no-repeat;
@@ -329,8 +384,6 @@ section {
 } 
 }
 
-
-
 .headshot {
     position: absolute;
     right: 0;
@@ -341,8 +394,9 @@ section {
 @media (min-width: 768px) {
     .headshot {
         position: absolute;
-        top: 170px;
-        right: 140px;
+        height: 600px;
+        top: 80px;
+        right: 180px;
     }
 }
 
@@ -357,16 +411,14 @@ section {
 
 @media (min-width: 1023px) {
     .headshot {
-        position: absolute;
-        top: 230px;
+        top: 100px;
         right: 30px;
-        animation: slideInRight 2s ease-in-out both ;
     }
 }
 
 @keyframes slideInRight {
     0% {
-        transform: translateX(900px)
+        transform: translateX(600px)
     }
     50% {
         transform: translateX(-40px);
@@ -385,7 +437,6 @@ section {
 
 @media (min-width: 1023px) {
     #headshotAndText {
-        margin-right: 20px;
         margin-top: 40px;
     }
 }
@@ -404,6 +455,11 @@ section {
         margin-top: -90px;
     }
 }
+@media (min-width: 768px) {
+    .about-heading {
+        margin-top: -25px;
+    }
+}
 
 @media (min-width: 992px) {
     .about-heading {
@@ -414,7 +470,6 @@ section {
 
 @media (min-width: 1024px) {
     .about-heading {
-        position: relative;
         right: 200px;
     }
 }
@@ -459,18 +514,17 @@ section {
 @media (max-width: 376px) {
     .about-btn {
         margin-top: -200px;
-        /* border: 3px solid gold; */
     }
 }
 @media (min-width: 768px) {
     .about-btn {
-        margin-top: 360px;
-        font-size: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
+        margin-top: 175px;
+        font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
     }
 }
 @media (min-width: 1023px) {
     .about-btn {
-        margin-top: 60px;
+        margin-top: -50px;
         font-size: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
     }
 }
@@ -520,13 +574,10 @@ section {
 }
 
 #contactSection {
-    /* margin-top: 60px; */
-    /* padding-top: 40px; */
     background-image: url(/images/music.png);
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: 20%, 30%;
-    /* border: 2px solid red; */
 }
 
 
@@ -534,7 +585,6 @@ section {
     display: flex;
     height: 200px;
     padding: 0;
-    /* border: 1px solid purple; */
 }
 
 @media (min-width: 768px) {
@@ -547,13 +597,11 @@ section {
 .contact-list-item {
     list-style-type: none;
     margin: 20px;
-    /* border: 1px solid orange; */
 }
 
 .email-form {
     margin-top: 10px;
     color: #f7f7ff;
-    /* border: 1px solid peru; */
 }
 
 #footerSection {
@@ -569,17 +617,13 @@ section {
 
 @media (min-width: 768px) {
     #about-head {
-        /* border: 1px solid blue; */
         height: 230px;
     }
 }
 .about-nav-section {
-    /* background-color: #f7f7ff; */
-    /* background-image: url(/images/sheetmusicc.png); */
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: 50%;
-    /* border: 1px solid green; */
     margin-top: 0;
     padding-top: 10px;
 }
@@ -632,10 +676,6 @@ section {
 
 }
 
-/* .about-card-list {
-    margin-left: 30px;
-} */
-
 .about-card-heading {
     text-shadow: 1px 1px 1px black;
     text-decoration: underline;
@@ -656,6 +696,12 @@ section {
     .about-cards {
         width: 100%;
         height: 250px;
+    }
+}
+@media (min-width: 992px) {
+    .about-cards {
+        width: 400px;
+        height: 400px;
     }
 }
 
