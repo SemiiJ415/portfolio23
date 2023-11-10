@@ -8,6 +8,8 @@
 
 body {
     background-color: #070600;
+    /* background-color: rgb(206, 49, 49);  */
+
 }
 
 html {
@@ -26,6 +28,7 @@ section {
     }
 }
 #landing {
+    background-color: #146a7b;
     background-image: url(/images/lightbg.png);
     background-clip: content-box;
     background-position: center;
@@ -83,7 +86,9 @@ section {
     transform: scaleX(0.9);
 }
 
-.black {
+
+
+.empty {
     position: absolute;
     width: 40px;
     height: 80px;
@@ -91,112 +96,112 @@ section {
     border: 1px solid rebeccapurple;
 }
 
-#black1 {
+#empty1 {
     left: 125px;
 }
 
-#black2 {
+#empty2 {
     left: 205px;
 }
 
-#black3 {
+#empty3 {
     left: 370px;
 }
 
-#black4 {
+#empty4 {
     left: 450px;
 }
 
-#black5 {
+#empty5 {
     left: 530px;
 }
 
 
 @media (min-width: 992px) { 
     
-    #black1 {
+    #empty1 {
         left: 425px;
     }
     
-    #black2 {
+    #empty2 {
         left: 505px;
     }
     
-    #black3 {
+    #empty3 {
         left: 670px;
     }
     
-    #black4 {
+    #empty4 {
         left: 750px;
     }
     
-    #black5 {
+    #empty5 {
         left: 833px;
     }
 } 
 
 @media (min-width: 1023px) {
-    #black1 {
+    #empty1 {
         right: 200px;
     }
     
-    #black2 {
+    #empty2 {
         right: 160px;
     }
     
-    #black3 {
+    #empty3 {
         right: 80px;
     }
     
-    #black4 {
+    #empty4 {
         right: 40px;
     }
     
-    #black5 {
+    #empty5 {
         right: 0;
     }
 }
 
 @media (min-width: 1318px) {
-    #black1 {
+    #empty1 {
         left: 330px;
     }
     
-    #black2 {
+    #empty2 {
         left: 415px;
     }
     
-    #black3 {
+    #empty3 {
         left: 580px;
     }
     
-    #black4 {
+    #empty4 {
         left: 660px;
     }
     
-    #black5 {
+    #empty5 {
         left: 740px;
     }
 }
 
 @media (min-width: 1399px) {
-    #black1 {
+    #empty1 {
         left: 425px;
     }
     
-    #black2 {
+    #empty2 {
         left: 505px;
     }
     
-    #black3 {
+    #empty3 {
         left: 670px;
     }
     
-    #black4 {
+    #empty4 {
         left: 750px;
     }
     
-    #black5 {
+    #empty5 {
         left: 830px;
     }
 }
@@ -216,6 +221,7 @@ section {
     bottom: 0;
     left: 0;
 }
+
 
 
 #aboutNavSection, #projectsNavSection, #contactNavSection {
@@ -259,12 +265,14 @@ section {
     background-color: #333;
 }
 
+
 .line {
     position: absolute;
     height: 130px;
     top: 10px;
     border: 1px solid #45c46f;
 }
+
 
 #line1 {
     left: 220px;
@@ -383,6 +391,8 @@ section {
     background-image: none;
 } 
 }
+
+
 
 .headshot {
     position: absolute;
@@ -698,6 +708,7 @@ section {
         height: 250px;
     }
 }
+
 @media (min-width: 992px) {
     .about-cards {
         width: 400px;
